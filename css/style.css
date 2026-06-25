@@ -148,12 +148,57 @@ body {
 
 /* Thêm Responsive cho màn hình điện thoại */
 @media (max-width: 768px) {
-    .card-list {
+    .menu-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .header-wrapper {
         flex-direction: column;
         gap: 10px;
     }
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.category-title {
+    color: #4e342e;
+    font-size: 26px;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed #d7ccc8;
+    padding-bottom: 12px;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.menu-header h4 {
+    color: #3e2723;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-header .price {
+    color: #d84315; /* Màu cam đậm cho giá tiền nổi bật */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-desc {
+    color: #795548;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
 }
